@@ -1,4 +1,9 @@
-import { ADD_ITEM, DELETE_ITEM, SET_INPUT_TEXT, UPDATE_ITEM } from '../actions';
+import {
+  ADD_ITEM,
+  DELETE_ITEM,
+  SET_INPUT_TEXT,
+  UPDATE_ITEM
+} from '../actions';
 
 const DEFAULT_INITIAL_STATE = {
   inputText: '',
@@ -44,17 +49,17 @@ function listReducer(state = INITIAL_STATE, action) {
         inputText: '',
         itemToUpdate: undefined
       });
-    case DELETE_ITEM:
-      return saveToLocalStorage({
-        ...state,
-        items: state.items.filter((item) => item.id !== action.item.id)
-      });
     case SET_INPUT_TEXT:
       return {
         ...state,
         inputText: action.text,
         itemToUpdate: action.itemToUpdate
       };
+    case DELETE_ITEM:
+      return saveToLocalStorage({
+        ...state,
+        items: state.items.filter((item) => item.id !== action.item.id)
+      });
     default:
       return state;
   }

@@ -4,6 +4,7 @@ import { MdEdit } from 'react-icons/md';
 import { FaTrash } from 'react-icons/fa';
 
 import * as actions from './../redux/actions';
+
 class ItemList extends React.Component {
   constructor() {
     super();

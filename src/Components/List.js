@@ -19,7 +19,7 @@ class List extends React.Component {
       );
     }
     return (<></>);  
-  }
+  };
 
   render() {
     const { list } = this.props;
@@ -32,7 +32,7 @@ class List extends React.Component {
       </div>
     );
   }
-}
+};
 
 const mapStateToProps = (state) => ({
   list: state.listReducer.items
