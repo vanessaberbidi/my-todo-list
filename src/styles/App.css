@@ -1,5 +1,5 @@
 .nav-config {
-  background-color: #00696a;
+  background-color: #0099c4;
   display: flex;
   justify-content: space-between;
 }
@@ -34,8 +34,13 @@
 }
 
 .todo-or-done {
-  color: #00696a;
+  color: #1e2f46;
   font-weight: 800;
+}
+
+.list {
+  background-color: white;
+  opacity: 0,6;
 }
 
 .item {
@@ -60,4 +65,12 @@ input[type=checkbox] {
 
 .clickable {
   cursor: pointer;
+}
+
+.color-button {
+  background-color: #0099c4;
+}
+
+.color-button:hover {
+  background-color: #1e2f46;
 }

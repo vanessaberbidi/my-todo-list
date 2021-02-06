@@ -25,9 +25,9 @@ class List extends React.Component {
     const { list } = this.props;
     return (
       <div>
-        <Container>
-          {this.renderList(list.filter(i => !i.done), 'A FAZER')}
-          {this.renderList(list.filter(i => i.done), 'FEITO')}
+        <Container className="list">
+          {this.renderList(list.filter(i => !i.done), 'TO DO')}
+          {this.renderList(list.filter(i => i.done), 'DONE')}
         </Container>
       </div>
     );

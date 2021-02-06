@@ -46,14 +46,14 @@ class InputsList extends React.Component {
         <InputGroup className="mb-3 input-size">
           <FormControl
             type="text"
-            placeholder="Digite a tarefa"
+            placeholder="Enter a task"
             value={inputText}
             onChange={this.handleSubmit}
             onKeyDown={this.handleKeyDown}
           />
           <InputGroup.Append>
-            <Button variant="info" className="button-config" onClick={this.saveItem}>
-              {!itemToUpdate ? 'ADICIONAR' : 'ALTERAR'}
+            <Button variant="info" className="button-config color-button" onClick={this.saveItem}>
+              {!itemToUpdate ? 'Add' : 'Update'}
             </Button>
           </InputGroup.Append>
         </InputGroup>

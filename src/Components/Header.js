@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import logo from '../img/logo-mobile.svg';
 
 export default function Header() {
   return (
@@ -10,10 +9,7 @@ export default function Header() {
       onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item className="title-app">
-      <span>TODO</span>LIST
-      </Nav.Item>
-      <Nav.Item>
-        <img className="logo" src={ logo } alt="logo emix"/>
+      <span>TASKS</span>TODO
       </Nav.Item>
     </Nav>
   )

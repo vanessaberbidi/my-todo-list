@@ -1,5 +1,3 @@
-# Todo List: Teste prático Front-end e-Mix
-
 ## Projeto
 A proposta consiste no desenvolvimento de uma Todo List utilizando o framework React.
 
@@ -25,12 +23,3 @@ As tarefas, bem como suas devidas modificações são salvas no localStorage do 
 `npm install`
 
 `npm start`
-
-## Propostas de melhorias que poderiam ser feitas no código
-- CSS: Melhorar e implementar Media Queries específicas para mobile
-- Testes Unitários para as funcionalidades propostas (RTL e Jest)
-- Melhorias de escritas padrão de código, com utilização de ferramentas como ESLint
-
-## Screenshots
-![todo list sem tarefas](./src/img/Screen%20Shot%202021-01-22%20at%2011.34.39.png)
-![todo list com tarefas](./src/img/Screen%20Shot%202021-01-22%20at%2011.35.27.png)
